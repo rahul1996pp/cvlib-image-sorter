@@ -25,4 +25,6 @@ poetry shell
 python cvlib_image_sorter.py
 ```
 
+You can download zip file that have all packages pre-installed [Download](https://drive.google.com/file/d/1sULnVsxUGAF5PR94pdc-FsZyvUUYUZpt/view?usp=sharing "Download")
+
 **Buy me a coffee : [click here](https://www.paypal.me/RahulPujari "Pay")**
