@@ -13,7 +13,7 @@ git clone https://github.com/rahul1996pp/cvlib-image-sorter.git
 cd cvlib-image-sorter
 poetry install
 poetry shell
-pip install tensorflow-gpu==1.15
+pip install tensorflow-gpu
 ```
 
 ### How to run:
