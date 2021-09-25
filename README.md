@@ -6,7 +6,7 @@ You can check out different methods of processing images at [Image sorter](https
 
 ## Installation:
 - To Install all dependencies
-- For first time use following commands.
+- For the first time using the following commands.
 
 ```bash
 git clone https://github.com/rahul1996pp/cvlib-image-sorter.git
@@ -18,13 +18,33 @@ pip install tensorflow-gpu
 
 ### How to run:
 
-To run program after installing all dependencies
+To run the program after installing all dependencies
 
 ```bash
 poetry shell
 python cvlib_image_sorter.py
 ```
 
-You can download zip file that have all packages pre-installed [Download](https://drive.google.com/file/d/1sULnVsxUGAF5PR94pdc-FsZyvUUYUZpt/view?usp=sharing "Download")
+## To run the code without installing dependencies
+
+You can download the zip file that has all packages pre-installed [.venv](https://drive.google.com/file/d/1UIior158OjZrFQMziS_9dc8chovS6W1w/view?usp=sharing ".venv")
+
+- Before downloading the zip file.
+
+```bash
+git clone https://github.com/rahul1996pp/cvlib-image-sorter.git
+cd cvlib-image-sorter
+```
+
+- Now extract the zip file inside this folder cvlib-image-sorter.
+- after extract the zip file we get the folder name .venv
+- Now run the following commands
+
+```bash
+poetry shell
+python cvlib_image_sorter.py
+```
+
 
 **Buy me a coffee : [click here](https://www.paypal.me/RahulPujari "Pay")**
+
