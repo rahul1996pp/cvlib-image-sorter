@@ -27,12 +27,20 @@ def img_cv_lib(image):
 
 def folder_list():
     folder = input('[+] Drag and drop the folder :- ').replace('"', '')
-    img = glob(f'{folder}/**/*.jpg', recursive=True) + (glob(f'{folder}/**/*.png', recursive=True)) + (
-        glob(f'{folder}/**/*.jpeg', recursive=True))
+    if not folder:
+        print(f"{red}[+] Enter the folder name correctly")
+        folder_list()
+    img = glob(f'{folder}/**/*.jpg', recursive=True) + (glob(f'{folder}/**/*.png', recursive=True)) + (glob(f'{folder}/**/*.jpeg', recursive=True))
+    if not (img) or (len(img)==0):
+        print("{red}[+] Folder is empty or incorrect folder name try again with new folder")
+        folder_list()
     print(f"{green}[+] Total files in folder are {len(img)}")
     for img_file in range(len(img)):
         print(f'{blue}[{img_file + 1}] {green}processing the image {cyan}{img[img_file]}')
-        img_cv_lib(img[img_file])
+        try:
+            img_cv_lib(img[img_file])
+        except:
+            print(f"{red}[-] Invalid image {img[img_file]}")
 
 def credit():
     credit_text = f"""
